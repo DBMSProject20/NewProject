@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Details</title>
+    <link rel="stylesheet" href="customer.css">
+
+</head>
+<script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-database.js"></script>
+<body>  
+   <!-- <div class=formdetails>Customer Data</div>-->
+    
+   <div class="container">  
+        <form class="contact-form" method ="POST" class="form" id="cform">
+            <div class="row">
+                <div class="column">      
+                <input type="text" class="form_input name " name="Name" id="fname" placeholder="Enter your first name" required oninvalid="this.setCustomValidity('Please Enter Your Name')" oninput="this.setCustomValidity('')">
+                </div>
+                <div class="column">      
+                    <input type="text" class="form_input name " name="Name" id="lname" placeholder="Enter your last name" required oninvalid="this.setCustomValidity('Please Enter Your Name')" oninput="this.setCustomValidity('')">
+                    </div>
+                <div class="column">
+                <input type= "tel" class="form_input phone " name="contactnumbers" id="contact" placeholder="Phone"  pattern="[1-9]{1}[0-9]{9}" required oninvalid="this.setCustomValidity('Please Enter Your Valid Phone Number')" oninput="this.setCustomValidity('')">
+               
+                </div>
+                <div class="column">
+                <input type="email" class="form_input email" name="emails" id="mail" placeholder="Email" required oninvalid="this.setCustomValidity('Please Enter Your Valid Email')" oninput="this.setCustomValidity('')">
+                
+                </div>
+                <div class="column">
+                <input type="text" class="form_input company" name="companynames" id="company" placeholder="Company Name" required oninvalid="this.setCustomValidity('Please Enter Your Valid Company Name')" oninput="this.setCustomValidity('')">
+                
+                </div>
+                <div class="column">
+                <textarea name="reqs" id="req" class="form_input requirements" placeholder="Requirements" required oninvalid="this.setCustomValidity('Please Enter Your Requirements')" oninput="this.setCustomValidity('')"></textarea>
+                
+                </div>
+                <div class="column">
+                    <button type="submit">Submit</button>
+                </div>
+            </div>    
+        </form>
+        
+    </div> 
+ 
+  
+   
+ 
+    <script src="https://www.smtpjs.com/v3/smtp.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="customer.js"></script>
+</body>
+</html>

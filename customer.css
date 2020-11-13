@@ -1,0 +1,62 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color:lightblue;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container{
+    max-width: 70%;
+    margin: 0px auto;
+    padding: 35px;
+    border-radius: 5px;
+    background-color: darkgray ;
+    
+}
+.row{
+    display: flex;
+    flex-flow: wrap;
+    margin: 0px -15px;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.column{
+    flex: 0 0 100%;
+    padding: 0px 15px;
+}
+.column .half{
+    flex:0 0 50%;
+}
+input,textarea{
+    width: 65%;
+    display:block;
+    padding: 15px 20px;
+    margin: 10px auto;
+    background-color: #fbfbfb;
+    border-radius: 3px;
+    font-size: 16px;
+    border: 0;
+}
+textarea{
+    
+    height: 120px;
+    
+}
+button[type="submit"]{
+    display:block;
+    margin: 0px auto;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgb(149, 247, 14) !important;
+    font-size: 20px;
+}
